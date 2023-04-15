@@ -9,17 +9,6 @@ class OpenAI_BOT:
         print("~[ Welcome to chatGPT 3.5 Turbo in CLI ]~")
         self.api_key = os.getenv("OPENAI_API_KEY", None)
 
-
-curl https://api.openai.com/v1/images/generations \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $OPENAI_API_KEY" \
-  -d '{
-    "prompt": "a white siamese cat",
-    "n": 1,
-    "size": "1024x1024"
-  }'
-
-
     def infinite_prompt(self):
         """ """
         history = []
